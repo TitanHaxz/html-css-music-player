@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" href="https://icons-for-free.com/iconfiles/png/512/music-131964753036631366.png" type="image/x-icon" />
+    <title>HTML Music Player</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <i class='bx bxs-music'></i>
+            <h1>İLANI AŞK EDİYORUM</h1>
+            <P>BENİMLE EVLENİR MİSİN?</P>
+
+            <audio id="song">
+                <source src="music/..." type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div> <i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"> <i class="fa-solid fa-play" id="ctrlIcon" > </i></div>
+                <div> <i class="fa-solid fa-forward"> </i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
